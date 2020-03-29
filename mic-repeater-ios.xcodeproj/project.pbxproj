@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		23570DC424302E0A007990BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23570DC324302E0A007990BE /* AppDelegate.swift */; };
+		23570DC624302E0A007990BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23570DC524302E0A007990BE /* SceneDelegate.swift */; };
+		23570DC824302E0A007990BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23570DC724302E0A007990BE /* ViewController.swift */; };
+		23570DCB24302E0A007990BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23570DC924302E0A007990BE /* Main.storyboard */; };
+		23570DCD24302E0B007990BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23570DCC24302E0B007990BE /* Assets.xcassets */; };
+		23570DD024302E0B007990BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23570DCE24302E0B007990BE /* LaunchScreen.storyboard */; };
+		23570DDB24302E0C007990BE /* mic_repeater_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23570DDA24302E0C007990BE /* mic_repeater_iosTests.swift */; };
+		23570DE624302E0C007990BE /* mic_repeater_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23570DE524302E0C007990BE /* mic_repeater_iosUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23570DD724302E0C007990BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23570DB824302E0A007990BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23570DBF24302E0A007990BE;
+			remoteInfo = "mic-repeater-ios";
+		};
+		23570DE224302E0C007990BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23570DB824302E0A007990BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23570DBF24302E0A007990BE;
+			remoteInfo = "mic-repeater-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		23570DC024302E0A007990BE /* mic-repeater-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mic-repeater-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23570DC324302E0A007990BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		23570DC524302E0A007990BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		23570DC724302E0A007990BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		23570DCA24302E0A007990BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		23570DCC24302E0B007990BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23570DCF24302E0B007990BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		23570DD124302E0B007990BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23570DD624302E0C007990BE /* mic-repeater-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mic-repeater-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23570DDA24302E0C007990BE /* mic_repeater_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mic_repeater_iosTests.swift; sourceTree = "<group>"; };
+		23570DDC24302E0C007990BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23570DE124302E0C007990BE /* mic-repeater-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mic-repeater-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23570DE524302E0C007990BE /* mic_repeater_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mic_repeater_iosUITests.swift; sourceTree = "<group>"; };
+		23570DE724302E0C007990BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23570DBD24302E0A007990BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23570DD324302E0C007990BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23570DDE24302E0C007990BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23570DB724302E0A007990BE = {
+			isa = PBXGroup;
+			children = (
+				23570DC224302E0A007990BE /* mic-repeater-ios */,
+				23570DD924302E0C007990BE /* mic-repeater-iosTests */,
+				23570DE424302E0C007990BE /* mic-repeater-iosUITests */,
+				23570DC124302E0A007990BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		23570DC124302E0A007990BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23570DC024302E0A007990BE /* mic-repeater-ios.app */,
+				23570DD624302E0C007990BE /* mic-repeater-iosTests.xctest */,
+				23570DE124302E0C007990BE /* mic-repeater-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		23570DC224302E0A007990BE /* mic-repeater-ios */ = {
+			isa = PBXGroup;
+			children = (
+				23570DC324302E0A007990BE /* AppDelegate.swift */,
+				23570DC524302E0A007990BE /* SceneDelegate.swift */,
+				23570DC724302E0A007990BE /* ViewController.swift */,
+				23570DC924302E0A007990BE /* Main.storyboard */,
+				23570DCC24302E0B007990BE /* Assets.xcassets */,
+				23570DCE24302E0B007990BE /* LaunchScreen.storyboard */,
+				23570DD124302E0B007990BE /* Info.plist */,
+			);
+			path = "mic-repeater-ios";
+			sourceTree = "<group>";
+		};
+		23570DD924302E0C007990BE /* mic-repeater-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				23570DDA24302E0C007990BE /* mic_repeater_iosTests.swift */,
+				23570DDC24302E0C007990BE /* Info.plist */,
+			);
+			path = "mic-repeater-iosTests";
+			sourceTree = "<group>";
+		};
+		23570DE424302E0C007990BE /* mic-repeater-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				23570DE524302E0C007990BE /* mic_repeater_iosUITests.swift */,
+				23570DE724302E0C007990BE /* Info.plist */,
+			);
+			path = "mic-repeater-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		23570DBF24302E0A007990BE /* mic-repeater-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23570DEA24302E0C007990BE /* Build configuration list for PBXNativeTarget "mic-repeater-ios" */;
+			buildPhases = (
+				23570DBC24302E0A007990BE /* Sources */,
+				23570DBD24302E0A007990BE /* Frameworks */,
+				23570DBE24302E0A007990BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mic-repeater-ios";
+			productName = "mic-repeater-ios";
+			productReference = 23570DC024302E0A007990BE /* mic-repeater-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		23570DD524302E0C007990BE /* mic-repeater-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23570DED24302E0C007990BE /* Build configuration list for PBXNativeTarget "mic-repeater-iosTests" */;
+			buildPhases = (
+				23570DD224302E0C007990BE /* Sources */,
+				23570DD324302E0C007990BE /* Frameworks */,
+				23570DD424302E0C007990BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23570DD824302E0C007990BE /* PBXTargetDependency */,
+			);
+			name = "mic-repeater-iosTests";
+			productName = "mic-repeater-iosTests";
+			productReference = 23570DD624302E0C007990BE /* mic-repeater-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		23570DE024302E0C007990BE /* mic-repeater-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23570DF024302E0C007990BE /* Build configuration list for PBXNativeTarget "mic-repeater-iosUITests" */;
+			buildPhases = (
+				23570DDD24302E0C007990BE /* Sources */,
+				23570DDE24302E0C007990BE /* Frameworks */,
+				23570DDF24302E0C007990BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23570DE324302E0C007990BE /* PBXTargetDependency */,
+			);
+			name = "mic-repeater-iosUITests";
+			productName = "mic-repeater-iosUITests";
+			productReference = 23570DE124302E0C007990BE /* mic-repeater-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		23570DB824302E0A007990BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Khang Vu";
+				TargetAttributes = {
+					23570DBF24302E0A007990BE = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					23570DD524302E0C007990BE = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 23570DBF24302E0A007990BE;
+					};
+					23570DE024302E0C007990BE = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 23570DBF24302E0A007990BE;
+					};
+				};
+			};
+			buildConfigurationList = 23570DBB24302E0A007990BE /* Build configuration list for PBXProject "mic-repeater-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 23570DB724302E0A007990BE;
+			productRefGroup = 23570DC124302E0A007990BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				23570DBF24302E0A007990BE /* mic-repeater-ios */,
+				23570DD524302E0C007990BE /* mic-repeater-iosTests */,
+				23570DE024302E0C007990BE /* mic-repeater-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		23570DBE24302E0A007990BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23570DD024302E0B007990BE /* LaunchScreen.storyboard in Resources */,
+				23570DCD24302E0B007990BE /* Assets.xcassets in Resources */,
+				23570DCB24302E0A007990BE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23570DD424302E0C007990BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23570DDF24302E0C007990BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		23570DBC24302E0A007990BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23570DC824302E0A007990BE /* ViewController.swift in Sources */,
+				23570DC424302E0A007990BE /* AppDelegate.swift in Sources */,
+				23570DC624302E0A007990BE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23570DD224302E0C007990BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23570DDB24302E0C007990BE /* mic_repeater_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23570DDD24302E0C007990BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23570DE624302E0C007990BE /* mic_repeater_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23570DD824302E0C007990BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23570DBF24302E0A007990BE /* mic-repeater-ios */;
+			targetProxy = 23570DD724302E0C007990BE /* PBXContainerItemProxy */;
+		};
+		23570DE324302E0C007990BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23570DBF24302E0A007990BE /* mic-repeater-ios */;
+			targetProxy = 23570DE224302E0C007990BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		23570DC924302E0A007990BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23570DCA24302E0A007990BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		23570DCE24302E0B007990BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23570DCF24302E0B007990BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		23570DE824302E0C007990BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		23570DE924302E0C007990BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		23570DEB24302E0C007990BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mic-repeater-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pint.olin.mic-repeater-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		23570DEC24302E0C007990BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mic-repeater-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pint.olin.mic-repeater-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		23570DEE24302E0C007990BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mic-repeater-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pint.olin.mic-repeater-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mic-repeater-ios.app/mic-repeater-ios";
+			};
+			name = Debug;
+		};
+		23570DEF24302E0C007990BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mic-repeater-iosTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pint.olin.mic-repeater-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mic-repeater-ios.app/mic-repeater-ios";
+			};
+			name = Release;
+		};
+		23570DF124302E0C007990BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mic-repeater-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pint.olin.mic-repeater-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mic-repeater-ios";
+			};
+			name = Debug;
+		};
+		23570DF224302E0C007990BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "mic-repeater-iosUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "pint.olin.mic-repeater-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mic-repeater-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23570DBB24302E0A007990BE /* Build configuration list for PBXProject "mic-repeater-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23570DE824302E0C007990BE /* Debug */,
+				23570DE924302E0C007990BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23570DEA24302E0C007990BE /* Build configuration list for PBXNativeTarget "mic-repeater-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23570DEB24302E0C007990BE /* Debug */,
+				23570DEC24302E0C007990BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23570DED24302E0C007990BE /* Build configuration list for PBXNativeTarget "mic-repeater-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23570DEE24302E0C007990BE /* Debug */,
+				23570DEF24302E0C007990BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23570DF024302E0C007990BE /* Build configuration list for PBXNativeTarget "mic-repeater-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23570DF124302E0C007990BE /* Debug */,
+				23570DF224302E0C007990BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 23570DB824302E0A007990BE /* Project object */;
+}
