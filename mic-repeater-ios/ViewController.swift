@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     let player = AVAudioPlayerNode()
     let audioSession = AVAudioSession.sharedInstance()
     var routePickerView = AVRoutePickerView(frame: CGRect(x: 0, y: 0, width: 0, height: 50))
+    let bus = 0
     var isRunning = false
     
     @IBOutlet weak var viewHolder: UIStackView!
@@ -35,23 +36,11 @@ class ViewController: UIViewController {
         do {
             try audioSession.setCategory(AVAudioSession.Category.playAndRecord, options: [.defaultToSpeaker, .allowBluetooth, .allowBluetoothA2DP, .allowAirPlay])
             try audioSession.setMode(AVAudioSession.Mode.default)
+            try audioSession.overrideOutputAudioPort(AVAudioSession.PortOverride.speaker)
             try audioSession.setActive(true)
         } catch {
             print("Error setting up AV session!")
             print(error)
-        }
-
-        let input = engine.inputNode
-
-        engine.attach(player)
-
-        let bus = 0
-        let inputFormat = input.inputFormat(forBus: bus)
-
-        engine.connect(player, to: engine.mainMixerNode, format: inputFormat)
-
-        input.installTap(onBus: bus, bufferSize: 512, format: inputFormat) { (buffer, time) -> Void in
-            self.player.scheduleBuffer(buffer)
         }
     }
     
@@ -60,6 +49,17 @@ class ViewController: UIViewController {
         sender.setTitle(isRunning ? "Stop" : "Start", for: .normal)
         
         if isRunning {
+            engine.attach(player)
+    
+            let inputFormat = engine.inputNode.outputFormat(forBus: bus)
+            
+            engine.connect(player, to: engine.mainMixerNode, format: inputFormat)
+            engine.connect(engine.mainMixerNode, to: engine.outputNode, format: inputFormat)
+            
+            engine.inputNode.installTap(onBus: bus, bufferSize: 512, format: inputFormat) { (buffer, time) -> Void in
+                self.player.scheduleBuffer(buffer)
+            }
+            
             do {
                 try engine.start()
             } catch {
@@ -69,6 +69,7 @@ class ViewController: UIViewController {
             }
             player.play()
         } else {
+            engine.inputNode.removeTap(onBus: bus)
             engine.stop()
             player.stop()
         }
