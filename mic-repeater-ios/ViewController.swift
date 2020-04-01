@@ -54,7 +54,7 @@ class ViewController: UIViewController {
             let inputFormat = engine.inputNode.outputFormat(forBus: bus)
             
             engine.connect(player, to: engine.mainMixerNode, format: inputFormat)
-            engine.connect(engine.mainMixerNode, to: engine.outputNode, format: inputFormat)
+//            engine.connect(engine.mainMixerNode, to: engine.outputNode, format: inputFormat)
             
             engine.inputNode.installTap(onBus: bus, bufferSize: 512, format: inputFormat) { (buffer, time) -> Void in
                 self.player.scheduleBuffer(buffer)
@@ -91,6 +91,34 @@ class ViewController: UIViewController {
         }
         present(controller, animated: true, completion: nil)
     }
+
+    @IBAction func ontestBtnClicked(_ sender: Any) {
+        print("\nOutput Data Sources:")
+        for output in audioSession.outputDataSources ?? [] {
+            print(output)
+        }
+        
+        print("\nInput Data Sources:")
+        for input in audioSession.inputDataSources ?? [] {
+            print(input)
+        }
+        
+        print("\nOutputs:")
+        for output in audioSession.currentRoute.outputs {
+            print(output)
+        }
+        
+        print("\nInputs:")
+        for input in audioSession.currentRoute.inputs {
+            print(input)
+        }
+         
+        print("\nCurrent Route:")
+        print(audioSession.currentRoute)
+        
+
+    }
+   
 
     
 }
