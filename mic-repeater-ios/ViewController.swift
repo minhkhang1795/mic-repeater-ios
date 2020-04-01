@@ -79,16 +79,21 @@ class ViewController: UIViewController {
     @IBAction func onInputBtnClicked(_ sender: AnyObject) {
         let controller = UIAlertController(title: "Select Input", message: "", preferredStyle: UIAlertController.Style.actionSheet)
         
+        // Add list of inputs to action
         for input in audioSession.availableInputs ?? [] {
-            controller.addAction(UIAlertAction(title: input.portName, style: UIAlertAction.Style.default, handler: { action in
+            controller.addAction(UIAlertAction(title: input.portName, style: UIAlertAction.Style.default) { action in
             do {
                 try self.audioSession.setPreferredInput(input)
             } catch {
                 print("Setting preferred input error")
                 print(error)
             }
-            }))
+            })
         }
+        // Cancel button
+        controller.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) {
+               UIAlertAction in
+           })
         present(controller, animated: true, completion: nil)
     }
 
